@@ -221,3 +221,14 @@ iframe::-webkit-scrollbar {
 iframe:hover {
   filter: brightness(80%);
 }
+
+@media screen and (max-width: 720px) {
+  .details-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .other {
+    margin-top: 10px;
+  }
+}
