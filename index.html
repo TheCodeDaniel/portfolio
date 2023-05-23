@@ -382,7 +382,6 @@
     <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-md">
         <div class="modal-content bg-black">
-          <!-- Modal Header -->
           <div class="modal-header">
             <h6 class="modal-title">Pick A Resume to view</h6>
             <button type="button" class="dis-btn" data-bs-dismiss="modal">
@@ -390,7 +389,6 @@
             </button>
           </div>
 
-          <!-- Modal body -->
           <div class="modal-body">
             <div class="row">
               <div class="col-md-6">
@@ -430,7 +428,48 @@
         </div>
       </div>
     </div>
-    <!-- Modal Ends -->
+
+    <!-- Modal Ends
+
+    <!-- Success modal -->
+    <div
+      class="modal fade"
+      id="myModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Email Status</h5>
+            <button type="button" class="dis-btn" data-bs-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <center>
+                  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                  <lottie-player
+                    src="https://assets5.lottiefiles.com/private_files/lf30_jvkdnlap.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    loop
+                    autoplay
+                  ></lottie-player>
+                  <span>Email sent successfully</span>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <footer class="container mb-3">
@@ -453,6 +492,8 @@
   const tag = document.getElementById("year");
   tag.innerHTML = year;
 
+  var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+
   // AJAX form request
   $(document).ready(function () {
     $("#myForm").submit(function (e) {
@@ -467,6 +508,7 @@
         success: function (response) {
           console.log(response);
           if (response == "email-sent") {
+            myModal.show();
           } else {
             alert("Error message: " + response);
           }

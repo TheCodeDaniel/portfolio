@@ -12,6 +12,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
 .bg-trans {
   background-color: transparent;
 }
