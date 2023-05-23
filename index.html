@@ -200,6 +200,7 @@
               <img
                 class="mt-3 rounded"
                 src="images/youtube.png"
+                draggable="false"
                 width="100%"
                 height="100%"
               />
@@ -411,7 +412,7 @@
               <div class="col-md-6">
                 <b>Backend Developer Resume</b>
                 <iframe
-                  src="resume/Daniel Ainoko Resume (Mobile developer).pdf"
+                  src="resume/Daniel Ainoko Resume (Backend development resume).pdf"
                   frameborder="0"
                   width="100%"
                   class="rounded"
@@ -419,7 +420,7 @@
                 </iframe>
                 <a
                   target="_blank"
-                  href="resume/Daniel Ainoko Resume (Mobile developer).pdf"
+                  href="resume/Daniel Ainoko Resume (Backend development resume).pdf"
                   class="text-dark"
                   ><b>View Resume</b></a
                 >
@@ -472,7 +473,7 @@
         },
         error: function (xhr, status, error) {
           // Handle errors
-          alert("Error message: " + error);
+          alert("Error message: " + error + status);
           console.log("AJAX request failed: " + status + ", Error: " + error);
         },
       });
