@@ -492,7 +492,7 @@
   const tag = document.getElementById("year");
   tag.innerHTML = year;
 
-  var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+  var myModal = new bootstrap.Modal(document.getElementById("myModal2"));
 
   // AJAX form request
   $(document).ready(function () {
@@ -515,7 +515,7 @@
         },
         error: function (xhr, status, error) {
           // Handle errors
-          alert("Error message: " + error + status);
+          alert("Error message: " + err-or + status);
           console.log("AJAX request failed: " + status + ", Error: " + error);
         },
       });
