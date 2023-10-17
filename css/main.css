@@ -1,9 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
 
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: x-small;
   background-color: #1e1e1e;
 }
@@ -89,14 +89,17 @@ html {
   justify-content: center;
   align-items: center;
   padding: 8px 17px;
+  position: relative;
+  right: 2px;
 }
 
 .details-btn {
   background-color: #fff;
   color: #000;
-  border-radius: 30px;
+  border-radius: 6px;
   font-weight: bold;
-  padding: 20px 40px 20px 40px;
+  font-size: larger;
+  padding: 10px 30px 10px 30px;
   border: 1px solid #fff;
   justify-content: center;
   transition: 0.2s ease-in-out;

@@ -19,7 +19,7 @@
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-sm fixed-top bg-trans">
     <div class="container">
-      <a class="navbar-brand text-white" href="#">Daniel Ainoko</a>
+      <a class="navbar-brand text-white" href="#"> <i>D_A</i> </a>
       <button
         class="navbar-toggler hidden-lg-up"
         type="button"
@@ -90,28 +90,27 @@
       <div class="selected-title" id="projects">
         <center>
           <hr width="10px" class="bg-white" />
-          <span class="text-white">SELECTED PROJECTS</span>
+          <span class="text-white">PROJECTS</span>
           <hr width="10px" class="bg-white" />
         </center>
       </div>
 
       <div class="row mt-5">
         <div class="col-md-5">
-          <h5 class="text-white">Methrex</h5>
+          <h5 class="text-white">Methrex Mobile</h5>
           <div class="project-tags">
             <div class="tags">Mobile development</div>
             <div class="tags m-2">Flutter</div>
+            <div class="tags m-1">Fintech</div>
           </div>
-          <p class="text-white mt-2">
-            A delivery app that utilizes geolocation and live-tracking with
-            real-time data
+          <p class="text-white mt-2 h6">
+            A fintech mobile app that is set apart from the rest. Be able to
+            send money across states with a sleek ui design and amazing customer
+            support
           </p>
 
-          <button
-            class="mt-3 details-btn"
-            onclick="link('https://github.com/TheCodeDaniel/upbox-delivery')"
-          >
-            View details
+          <button class="mt-3 details-btn" onclick="link('methrex.com')">
+            View live project
           </button>
         </div>
         <div class="col-md-7">
@@ -122,10 +121,10 @@
             <center>
               <img
                 class="mt-3"
-                src="images/upbox-preview.png"
+                src="images/methrex_mockup.png"
                 alt=""
                 draggable="false"
-                width="100%"
+                width="80%"
                 height="100%"
               />
             </center>
@@ -144,47 +143,47 @@
             <center>
               <img
                 class="mt-3"
-                src="images/stackats.png"
+                src="images/eapp.svg"
                 alt=""
                 draggable="false"
-                width="100%"
+                width="40%"
                 height="100%"
               />
             </center>
           </div>
         </div>
         <div class="col-md-5">
-          <h5 class="text-white down">School Management System (User)</h5>
+          <h5 class="text-white down">E appointment mobile</h5>
           <div class="project-tags">
-            <div class="tags">Backend development</div>
+            <div class="tags">Mobile development</div>
+            <div class="tags m-2">Flutter</div>
           </div>
-          <p class="text-white mt-2">
-            An application management system for a school.
+          <p class="text-white mt-2 h6">
+            Solutions to make your life easier: <br />
+            Book and manage your appointment with different organisations
           </p>
 
-          <button
-            class="mt-3 details-btn"
-            onclick="link('https://github.com/TheCodeDaniel/Student-Dashboard')"
-          >
-            View details
+          <button class="mt-3 details-btn" onclick="link('eapp.com.ng')">
+            View live project
           </button>
         </div>
 
         <!-- Third project -->
         <div class="mt-5"><br /><br /><br /></div>
         <div class="col-md-5">
-          <h5 class="text-white">Youtube clone</h5>
+          <h5 class="text-white">gpt ChatBot</h5>
           <div class="project-tags">
             <div class="tags">Mobile development</div>
             <div class="tags m-2">Flutter</div>
+             <div class="tags m-1">Artificial intelligence</div>
           </div>
-          <p class="text-white mt-2">
-            A clone of the famous video-streaming app, YouTube.
+          <p class="text-white mt-2 h6">
+            Free on-the-go chatbot for consumers who dont want to pay but get a good experience
           </p>
 
           <button
             class="mt-3 details-btn"
-            onclick="link('https://github.com/TheCodeDaniel/FlutterYoutubeClone')"
+            onclick="link('github.com/TheCodeDaniel/flutter_gpt')"
           >
             View details
           </button>
@@ -197,52 +196,16 @@
             <center>
               <img
                 class="mt-3 rounded"
-                src="images/youtube.png"
-                draggable="false"
-                width="100%"
-                height="100%"
-              />
-            </center>
-          </div>
-        </div>
-
-        <!-- 4th Projects -->
-        <div class="mt-5"><br /><br /><br /></div>
-
-        <div class="col-md-7">
-          <div
-            class="rounded shadow"
-            style="width: 100%; height: 100%; background-color: #fafafa"
-          >
-            <center>
-              <img
                 src="images/chatbot.png"
-                class="rounded"
-                width="100%"
+                draggable="false"
+                width="50%"
                 height="100%"
-                alt=""
               />
             </center>
           </div>
         </div>
-        <div class="col-md-5">
-          <h5 class="text-white down">Flutter GPT</h5>
-          <div class="project-tags">
-            <div class="tags">Mobile development</div>
-            <div class="tags">ChatGpt API</div>
-          </div>
-          <p class="text-white mt-2">
-            A ChatBot app created using OpenAI’s ChatGPT API.
-          </p>
 
-          <button
-            class="mt-3 details-btn"
-            onclick="link('https://github.com/TheCodeDaniel/flutter_gpt')"
-          >
-            View details
-          </button>
-        </div>
-      </div>
+        
 
       <!-- Others -->
 
@@ -464,7 +427,7 @@
 <script>
   // open new tab links
   function link(link) {
-    window.open(link);
+    window.open("https://" + link);
   }
 
   // footer date
