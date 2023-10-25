@@ -53,12 +53,8 @@
   <!-- Page Body -->
   <body>
     <!-- preloader display -->
-
     <div id="preloader">
-      <div id="intro-text">
-        <h1>Daniel Ainoko</h1>
-      </div>
-      <!-- <div id="loader"></div> -->
+      <div id="loader"></div>
     </div>
 
     <!-- website content -->
@@ -345,15 +341,12 @@
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";
 
-    const introText = document.getElementById("intro-text");
-    introText.style.display = "none";
-
     // You can also fade it out with a smooth transition if you prefer
-    preloader.style.opacity = 0;
-    setTimeout(() => {
-      preloader.style.display = "none";
-    }, 5000);
-    // Adjust the time for the transition
+    // preloader.style.opacity = 0;
+    // setTimeout(() => {
+    //     preloader.style.display = 'none';
+    // }, 500);
+     // Adjust the time for the transition
   });
 
   // open new tab links
