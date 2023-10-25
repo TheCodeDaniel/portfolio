@@ -152,8 +152,9 @@ html {
 
 #intro-text {
   position: fixed;
-  top: 40%;
-  left: 60%;
+  top: 50%;
+  left: 50%;
+  bottom: 50px;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1; /* Place it above the preloader */
