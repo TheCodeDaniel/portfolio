@@ -350,9 +350,15 @@
 
     // You can also fade it out with a smooth transition if you prefer
     preloader.style.opacity = 0;
-    setTimeout(() => {
-      preloader.style.display = "none";
-    }, 5000);
+    // Wait for 5 seconds before hiding the introductory text and showing the preloader
+    setTimeout(function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.display = "block"; // Show the preloader
+
+      const introText = document.getElementById("intro-text");
+      introText.classList.add("hiding"); // Apply the blur when hiding
+    }, 5000); // 5000 milliseconds (5 seconds)
+
     // Adjust the time for the transition
   });
 

@@ -156,7 +156,13 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 1; /* Place it above the preloader */
+  z-index: 1;
+  transition: filter 1s ease-in-out; /* Add a filter transition */
+  filter: blur(0); /* Initial blur of 0 */
+}
+
+#intro-text.hiding {
+  filter: blur(5px); /* Apply the blur when hiding */
 }
 
 #intro-text h1 {
