@@ -53,12 +53,11 @@
   <!-- Page Body -->
   <body>
     <!-- preloader display -->
-
+    <div id="intro-text">
+      <h1>Daniel Ainoko</h1>
+      <p>Mobile Developer</p>
+    </div>
     <div id="preloader">
-      <div id="intro-text">
-        <h1>Daniel Ainoko</h1>
-        <p>Mobile Developer</p>
-      </div>
       <div id="loader"></div>
     </div>
 
@@ -346,11 +345,14 @@
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";
 
+    const introText = document.getElementById("intro-text");
+    introText.style.display = "none";
+
     // You can also fade it out with a smooth transition if you prefer
-    // preloader.style.opacity = 0;
-    // setTimeout(() => {
-    //     preloader.style.display = 'none';
-    // }, 500);
+    preloader.style.opacity = 0;
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 5000);
     // Adjust the time for the transition
   });
 
