@@ -127,7 +127,7 @@ html {
 }
 
 /* Preloader style */
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -146,7 +146,7 @@ html {
   width: 50px;
   height: 50px;
   animation: spin 2s linear infinite;
-}
+} */
 
 /* intro preloader text */
 
@@ -156,13 +156,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 1;
-  transition: filter 1s ease-in-out; /* Add a filter transition */
-  filter: blur(0); /* Initial blur of 0 */
-}
-
-#intro-text.hiding {
-  filter: blur(5px); /* Apply the blur when hiding */
+  z-index: 1; /* Place it above the preloader */
 }
 
 #intro-text h1 {
