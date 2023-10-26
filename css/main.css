@@ -34,6 +34,10 @@ html {
   font-size: 13px;
 }
 
+.text-pink {
+  color: pink;
+}
+
 .circle1 {
   width: 300px;
   height: 300px;
@@ -111,21 +115,6 @@ html {
   border: 1px solid #fff;
 }
 
-/* Scroll bar */
-
-/* For webkit-based browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Set the background color of the track */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888; /* Set the color of the thumb */
-}
-
 /* Preloader style */
 #preloader {
   position: fixed;
@@ -157,6 +146,22 @@ html {
   }
 }
 
+/* Scroll bar */
+
+/* For webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1e1e1e; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+  border-radius: 10px;
+}
+
 /* For Firefox */
 /* Please note that this method is only supported in Firefox Nightly builds (as of my knowledge cutoff in September 2021) */
 /* You may need to use a custom scrollbar library for Firefox or other browsers */
@@ -167,7 +172,7 @@ html {
   }
 
   scrollbar-track {
-    background-color: #f1f1f1; /* Set the background color of the track */
+    background-color: #1e1e1e; /* Set the background color of the track */
   }
 
   scrollbar-thumb {
