@@ -4,16 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Ainoko</title>
+    <title>Daniel's Portfolio</title>
     <link rel="shortcut icon" href="icons/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <!-- Navigation bar -->
@@ -65,8 +58,8 @@
             <div class="col-md-8 header mb-5">
               <h1 class="mt-header text-white">Daniel Ainoko</h1>
               <p class="mt-1 text-white">
-                Im a <b>Mobile Developer</b>, I build cross platform responsive
-                and UI appealing mobile apps
+                Im a <b id="typed-output" style="color: pink"></b>, I build
+                cross platform responsive and UI appealing mobile apps
               </p>
 
               <div class="mt-4 accounts">
@@ -326,18 +319,34 @@
   </footer>
 </html>
 
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 <script>
   window.addEventListener("load", () => {
     // After all assets are loaded, hide the preloader
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";
 
-    // You can also fade it out with a smooth transition if you prefer
-    // preloader.style.opacity = 0;
-    // setTimeout(() => {
-    //     preloader.style.display = 'none';
-    // }, 500);
-    // Adjust the time for the transition
+    // Typed js function
+    $(document).ready(function () {
+      var options = {
+        strings: ["Mobile Developer"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: false,
+      };
+
+      var typed = new Typed("#typed-output", options);
+    });
   });
 
   // open new tab links
@@ -352,5 +361,6 @@
   const tag = document.getElementById("year");
   tag.innerHTML = year;
 
+  // open modal
   var myModal = new bootstrap.Modal(document.getElementById("myModal2"));
 </script>
