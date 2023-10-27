@@ -267,6 +267,20 @@
 
         <hr class="mt-5 bg-white" />
       </div>
+
+      <!-- back to top button -->
+      <button id="back-to-top" class="hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 24c-6.627 0-12-5.373-12-12s5.373-12 12-12 12 5.373 12 12-5.373 12-12 12zm0-22c-5.524 0-10 4.476-10 10s4.476 10 10 10 10-4.476 10-10-4.476-10-10-10zm0 15h-2v-7h-3l5-5 5 5h-3z"
+          />
+        </svg>
+      </button>
     </div>
 
     <!-- Resume Modal -->
@@ -295,7 +309,7 @@
                 <a
                   target="_blank"
                   href="resume/Daniel Ainoko Resume.pdf"
-                  class="text-dark"
+                  class="text-dark h6"
                   ><b>View Resume </b></a
                 >
               </div>
@@ -343,6 +357,28 @@
       };
 
       var typed = new Typed("#typed-output", options);
+    });
+
+    // For back to top function
+    // Get a reference to the button element
+    const backToTopButton = document.getElementById("back-to-top");
+
+    // Function to show/hide the button based on the user's scroll position
+    function toggleBackToTopButton() {
+      if (window.pageYOffset > 100) {
+        // Adjust this value to control when the button appears
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    }
+
+    // Attach a scroll event listener to the window
+    window.addEventListener("scroll", toggleBackToTopButton);
+
+    // Scroll to the top when the button is clicked
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
 

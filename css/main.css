@@ -119,6 +119,35 @@ html {
   border: 1px solid #fff;
 }
 
+/* back to top button */
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Makes the button rounded */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-to-top svg {
+  fill: #fff;
+  width: 24px; /* Adjust the size of the arrow icon */
+  height: 24px; /* Adjust the size of the arrow icon */
+}
+
+#back-to-top:hover {
+  background-color: #555;
+}
+
 /* Preloader style */
 #preloader {
   position: fixed;
