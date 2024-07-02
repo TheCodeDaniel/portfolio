@@ -201,10 +201,6 @@ html {
   border-radius: 10px;
 }
 
-/* For Firefox */
-/* Please note that this method is only supported in Firefox Nightly builds (as of my knowledge cutoff in September 2021) */
-/* You may need to use a custom scrollbar library for Firefox or other browsers */
-/* This example assumes the scrollbar width is 10px */
 @-moz-document url-prefix() {
   scrollbar {
     width: 5px;
